@@ -3,16 +3,41 @@
 import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
+// async function getBlogs() {
+//   // const res = await fetch(`https://dev.to/api/articles?username=${personalData.mediumUsername}`)
+//   const res = await fetch(`https://medium.com/@${personalData.mediumUsername}/latest?format=json`)
+//
+//   if (!res.ok) {
+//     throw new Error('Failed to fetch data')
+//   }
+//
+//   const data = await res.json();
+//   return data;
+// };
+
+import { parse } from 'rss-to-json';
+
 async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+  try {
+    const rss = await parse(`https://medium.com/feed/@${personalData.mediumUsername}`);
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    // Transform the RSS data to match your existing structure
+    const transformed = rss.items.map(item => ({
+      title: item.title,
+      description: item.description,
+      cover_image: item.content.match(/<img[^>]+src="([^">]+)"/)?.[1] || '',
+      url: item.link,
+      published_at: item.published,
+      reading_time_minutes: Math.ceil(item.content.split(' ').length / 200),
+      tag_list: item.category || []
+    }));
+
+    return transformed.filter(item => item.cover_image);
+  } catch (error) {
+    console.error('Failed to fetch blog data:', error);
+    return [];
   }
-
-  const data = await res.json();
-  return data;
-};
+}
 
 async function page() {
   const blogs = await getBlogs();

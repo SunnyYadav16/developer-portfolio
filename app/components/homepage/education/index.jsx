@@ -1,7 +1,7 @@
 // @flow strict
 import Image from "next/image";
 
-import { educations } from "@/utils/data/educations";
+import {education} from "@/utils/data/educations";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
@@ -27,7 +27,7 @@ function Education() {
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
+            Education
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
         </div>
@@ -44,7 +44,7 @@ function Education() {
           <div>
             <div className="flex flex-col gap-6">
               {
-                educations.map(education => (
+                education.map(education => (
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
                       <Image
@@ -67,6 +67,7 @@ function Education() {
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {education.title}
                           </p>
+                          <p className="text-sm sm:text-base mb-2">{education.major}</p>
                           <p className="text-sm sm:text-base">{education.institution}</p>
                         </div>
                       </div>

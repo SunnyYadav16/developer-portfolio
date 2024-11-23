@@ -7,13 +7,12 @@ import Navbar from "./components/navbar";
 import "./css/card.scss";
 import "./css/globals.scss";
 import ScrollToTop from "./components/helper/scroll-to-top";
-const inter = Inter({ subsets: ["latin"] });
+import { metadata } from "./metadata";  // Import metadata
 
-export const metadata = {
-  title: "Portfolio of Sunny Yadav - Software Developer",
-  description:
-    "This is the portfolio of Sunny Yadav. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
-};
+export { metadata };  // Export metadata for Next.js to use
+
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (

@@ -9,22 +9,6 @@ import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 import {parse} from 'rss-to-json';
 
-// async function getData() {
-//   // const res = await fetch(`https://dev.to/api/articles?username=${personalData.mediumUsername}`)
-//   // const res = await fetch(`https://medium.com/@${personalData.mediumUsername}/latest?format=json`)
-//   const res = await fetch(`https://medium.com/@sunny_yadav/latest?format=json`)
-//
-//   if (!res.ok) {
-//     throw new Error('Failed to fetch data')
-//   }
-//
-//   const data = await res.json();
-//
-//   const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-//
-//   return filtered;
-// };
-
 async function getData() {
   try {
     const rss = await parse(

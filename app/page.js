@@ -40,8 +40,6 @@ async function getData() {
       reading_time_minutes: Math.ceil(item.content.split(' ').length / 200), // Rough estimate
       tag_list: item.category || []
     }));
-    console.log(rss)
-    console.log(transformed)
 
     // Filter posts with cover images and randomize
     const filtered = transformed

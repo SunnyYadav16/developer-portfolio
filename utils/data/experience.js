@@ -11,6 +11,6 @@ export const experiences = [
     title: "Software Engineering Intern",
     company: "NetAnalytics LLC",
     duration: "July 2021 - November 2021",
-    responsibilities: "As a Junior Software Engineer at NetAnalytics LLC, I redesigned and maintained numerous APIs using Python’s Flask framework. I also developed an automated image processing pipeline with OpenCV, Pandas, and NumPy. Conducted advanced data analysis, deriving insights that supported improved decision-making processes."
+    responsibilities: "As a Junior Software Engineer at NetAnalytics LLC, I redesigned and maintained numerous APIs using Python’s Flask framework. Conducted advanced data analysis, deriving insights that supported improved decision-making processes. I developed an automated image processing pipeline with OpenCV, Pandas, and NumPy"
   }
 ]

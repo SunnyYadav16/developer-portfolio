@@ -70,7 +70,7 @@ function Experience() {
                               <div className="text-sm mb-2 sm:text-base">
                                 <ul className="list-disc list-inside">
                                   {experience.responsibilities.split('. ').map((sentence, index) => (
-                                      sentence && <li className="mb-2" key={index} style={{textAlign: "justify"}}>{sentence.trim()}.</li>
+                                      sentence && <li className="mb-2" key={index}>{sentence.trim()}.</li>
                                   ))}
                                 </ul>
                               </div>

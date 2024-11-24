@@ -12,7 +12,7 @@ export const personalData = {
   twitter: 'https://twitter.com/ItzMeSunnyYadav',
   stackOverflow: 'https://stackoverflow.com/users/13625493/sunny-yadav',
   leetcode: "",
-  devUsername: "said7388",
+  devUsername: "sunny_yadav",
   mediumUsername: "sunny_yadav",
   resume: "https://drive.google.com/file/d/1g4PunDsZiIDO9mdSHjR2pqhC5PSEMJvN/view?usp=sharing",
 }

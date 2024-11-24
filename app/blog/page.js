@@ -3,18 +3,6 @@
 import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
-// async function getBlogs() {
-//   // const res = await fetch(`https://dev.to/api/articles?username=${personalData.mediumUsername}`)
-//   const res = await fetch(`https://medium.com/@${personalData.mediumUsername}/latest?format=json`)
-//
-//   if (!res.ok) {
-//     throw new Error('Failed to fetch data')
-//   }
-//
-//   const data = await res.json();
-//   return data;
-// };
-
 import { parse } from 'rss-to-json';
 
 async function getBlogs() {

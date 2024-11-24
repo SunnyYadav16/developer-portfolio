@@ -20,7 +20,7 @@ export const projectsData = [
     id: 2,
     name: 'Disruptive Connections',
     description: 'In my professional experience, I have designed and implemented high-performance middleware solutions utilizing Golang. My expertise encompasses the development of robust data validation mechanisms and asynchronous processing systems. I have successfully optimized inter-service data transfer by implementing enhanced error handling and streamlined workflow efficiency through the integration of Celery task management. Furthermore, I have specialized in developing reliable backend architectures specifically designed for order processing and ensuring data integrity across multiple services.',
-    shortDescription: 'Developed high-performance Golang middleware solutions with asynchronous processing and data validation. Implemented optimized order processing systems with Celery integration.',
+    shortDescription: 'Developed high-performance Golang middleware solutions with asynchronous processing and data validation.',
     tools: ['Go', 'Gin', "PostgreSQL", "Google Cloud Services", "Celery"],
     role: 'Backend Developer',
     code: '',

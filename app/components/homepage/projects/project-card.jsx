@@ -100,6 +100,18 @@ function ProjectCard({ project }) {
           {/*    ))}*/}
           {/*  </div>*/}
           {/*</div>*/}
+          <div className="flex flex-col gap-3 mt-4">
+            <div className="flex flex-wrap gap-2">
+              {project.tools.map((tool, index) => (
+                  <span
+                      key={index}
+                      className="px-3 py-1 text-xs rounded-full bg-[#2d1b69] text-white hover:bg-[#3d2b79] transition-colors duration-300 cursor-default"
+                  >
+                {tool}
+              </span>
+              ))}
+            </div>
+          </div>
 
           {/*<div className="mt-6">*/}
           {/*  <div className="flex flex-row space-x-2">*/}

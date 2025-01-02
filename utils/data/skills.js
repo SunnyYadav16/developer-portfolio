@@ -3,8 +3,12 @@ export const skillsData = [
   'Go',
   'Javascript',
   'Java',
-  'Django',
   'Kotlin',
+  'Django',
+    'React',
+  'Flask',
+    'Node JS',
+    'Tailwind',
   'PyTorch',
   'TensorFlow',
   'MySQL',
@@ -16,7 +20,7 @@ export const skillsData = [
   'AWS',
   'Azure',
   'Git',
-  'Docker'
+  'Docker',
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
